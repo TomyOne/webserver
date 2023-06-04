@@ -19,7 +19,7 @@ PYPI_URL = f"https://pypi.python.org/pypi/{PROJECT_PACKAGE_NAME}"
 GITHUB_PATH = f"{PROJECT_GITHUB_USERNAME}/{PROJECT_GITHUB_REPOSITORY}"
 GITHUB_URL = f"https://github.com/{GITHUB_PATH}"
 
-DOWNLOAD_URL = f"{GITHUB_URL}/archive/v0.0.1.zip"
+DOWNLOAD_URL = f"{GITHUB_URL}/archive/v0.0.2.zip"
 
 here = os.path.abspath(os.path.dirname(__file__))
 
@@ -40,7 +40,7 @@ CLASSIFIERS = [
 
 setup(
     name=PROJECT_PACKAGE_NAME,
-    version="0.0.1",
+    version="0.0.2",
     license=PROJECT_LICENSE,
     url=GITHUB_URL,
     project_urls={
