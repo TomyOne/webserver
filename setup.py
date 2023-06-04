@@ -4,6 +4,8 @@ import os
 
 from setuptools import setup, find_packages
 
+from webserver import const
+
 PROJECT_NAME = "webserver"
 PROJECT_PACKAGE_NAME = "webserver"
 PROJECT_LICENSE = "MIT"
@@ -19,7 +21,7 @@ PYPI_URL = f"https://pypi.python.org/pypi/{PROJECT_PACKAGE_NAME}"
 GITHUB_PATH = f"{PROJECT_GITHUB_USERNAME}/{PROJECT_GITHUB_REPOSITORY}"
 GITHUB_URL = f"https://github.com/{GITHUB_PATH}"
 
-DOWNLOAD_URL = f"{GITHUB_URL}/archive/v0.0.2.zip"
+DOWNLOAD_URL = f"{GITHUB_URL}/archive/{const.__version__}.zip"
 
 here = os.path.abspath(os.path.dirname(__file__))
 
@@ -40,7 +42,7 @@ CLASSIFIERS = [
 
 setup(
     name=PROJECT_PACKAGE_NAME,
-    version="0.0.2",
+    version=const.__version__,
     license=PROJECT_LICENSE,
     url=GITHUB_URL,
     project_urls={
